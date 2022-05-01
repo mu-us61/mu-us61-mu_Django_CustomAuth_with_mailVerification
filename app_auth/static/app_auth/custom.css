@@ -1,0 +1,70 @@
+/* h5 {
+    color: brown;
+} */
+*{
+    font-family: 'Nunito', sans-serif;
+    font-size: large;
+}
+.main_div {
+     margin: auto;
+     width: 512px;
+     background-color: aquamarine;
+     text-align: center;
+     margin-top: 100px;
+     padding: 20px;
+}
+
+body {
+    background-color: azure;
+}
+
+a {
+    text-decoration-line: none;
+    text-decoration-color: crimson;
+}
+
+.tasks_list {
+    text-align: initial;
+}
+
+.left-delete{
+    float: right;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgb(134, 129, 129);
+  }
+  
+  li {
+    float: left;
+  }
+  
+  li a {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  li a:hover {
+    background-color: #111;
+  }
+
+  li.right{
+      float: right;
+  }
+
+  li span {
+    display: inline-block;
+    color: rgb(119, 245, 108);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  

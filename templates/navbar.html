@@ -1,0 +1,26 @@
+<ul>
+    <li><a href="/">Home</a></li>
+    {% if user.is_authenticated %}
+    <li style="text-align:center;">
+        <span>Hello {{ user.username }}</span>
+    </li>
+    {% endif %}
+    {% if user.is_authenticated %}
+    <li class="right">
+        <a href=" {% url 'app_auth:change_password_view_name' %} ">Change Password</a>
+    </li>
+    <li class="right">
+        <a href=" {% url 'app_auth:logout_view_name' %} ">Logout</a>
+    </li>
+    {% comment %} <li>
+        <a href=" {% url 'password_change' %}">Password Change</a>
+    </li> {% endcomment %}
+    {% else %}
+    <li class="right">
+        <a href=" {% url 'app_auth:register_view_name' %}">Register</a>
+    </li>
+    <li class="right">
+        <a href=" {% url 'app_auth:login_view_name' %} ">Login</a>
+    </li>
+    {% endif %}
+</ul>
